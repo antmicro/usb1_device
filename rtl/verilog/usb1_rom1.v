@@ -170,12 +170,12 @@ always @(posedge clk)
 	   7'h45:	dout <= #1 8'd00;	// max packet size high byte
 	   7'h46:	dout <= #1 8'h01;	// polling interval
 
-/*
+
 		// ====================================
 		// ===== String Descriptor Lang ID=====
 		// ====================================
 
-	   7'h47:	dout <= #1 8'd06;	// this descriptor length
+	   7'h47:	dout <= #1 8'd04;	// this descriptor length
 	   7'h48:	dout <= #1 8'd03;	// descriptor type
 
 	   7'h49:	dout <= #1 8'd09;	// Language ID 0 low byte
@@ -194,14 +194,14 @@ always @(posedge clk)
 	   7'h50:	dout <= #1 8'd010;	// this descriptor length
 	   7'h51:	dout <= #1 8'd03;	// descriptor type
 	   7'h52:	dout <= #1 "0";
-	   7'h53:	dout <= #1 " ";
-	   7'h54:	dout <= #1 "g";
-	   7'h55:	dout <= #1 "n";
-	   7'h56:	dout <= #1 "i";
-	   7'h57:	dout <= #1 "r";
-	   7'h58:	dout <= #1 "t";
-	   7'h59:	dout <= #1 "S";
-
+	   7'h53:	dout <= #1 0;
+	   7'h54:	dout <= #1 " ";
+	   7'h55:	dout <= #1 0;
+	   7'h56:	dout <= #1 "g";
+	   7'h57:	dout <= #1 0;
+	   7'h58:	dout <= #1 "n";
+	   7'h59:	dout <= #1 0;
+/*
 		// ====================================
 		// =====   String Descriptor 1    =====
 		// ====================================
